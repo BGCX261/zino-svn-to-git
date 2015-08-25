@@ -1,0 +1,498 @@
+<ui version="4.0" >
+ <author>Tim Sutton</author>
+ <comment></comment>
+ <exportmacro></exportmacro>
+ <class>ZinoBase</class>
+ <widget class="QMainWindow" name="ZinoBase" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>688</width>
+    <height>637</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Zino</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset>resources/zino48.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget" >
+   <layout class="QGridLayout" >
+    <property name="margin" >
+     <number>9</number>
+    </property>
+    <property name="spacing" >
+     <number>6</number>
+    </property>
+    <item row="0" column="0" >
+     <widget class="QTabWidget" name="tabQuiz" >
+      <property name="currentIndex" >
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tabWords" >
+       <attribute name="title" >
+        <string>Words</string>
+       </attribute>
+       <layout class="QGridLayout" >
+        <property name="margin" >
+         <number>9</number>
+        </property>
+        <property name="spacing" >
+         <number>6</number>
+        </property>
+        <item row="0" column="0" >
+         <widget class="QGroupBox" name="grpFiltering" >
+          <property name="title" >
+           <string>Filter and Sort</string>
+          </property>
+          <layout class="QGridLayout" >
+           <property name="margin" >
+            <number>9</number>
+           </property>
+           <property name="spacing" >
+            <number>6</number>
+           </property>
+           <item row="0" column="4" >
+            <widget class="QComboBox" name="cboSortOrder" >
+             <property name="minimumSize" >
+              <size>
+               <width>0</width>
+               <height>20</height>
+              </size>
+             </property>
+             <item>
+              <property name="text" >
+               <string>Portuguese</string>
+              </property>
+             </item>
+             <item>
+              <property name="text" >
+               <string>English</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="0" column="1" >
+            <widget class="QLineEdit" name="leFilter" >
+             <property name="minimumSize" >
+              <size>
+               <width>0</width>
+               <height>20</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0" >
+            <widget class="QLabel" name="lblFilter" >
+             <property name="minimumSize" >
+              <size>
+               <width>0</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="text" >
+              <string>Filter:</string>
+             </property>
+             <property name="buddy" >
+              <cstring>leFilter</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3" >
+            <widget class="QLabel" name="labelOrder" >
+             <property name="minimumSize" >
+              <size>
+               <width>0</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="text" >
+              <string>Order By:</string>
+             </property>
+             <property name="buddy" >
+              <cstring>cboSortOrder</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2" >
+            <widget class="QPushButton" name="pbnFilter" >
+             <property name="minimumSize" >
+              <size>
+               <width>0</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="maximumSize" >
+              <size>
+               <width>100</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text" >
+              <string>Go</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="5" >
+            <widget class="QToolButton" name="toolAdd" >
+             <property name="text" >
+              <string>...</string>
+             </property>
+             <property name="icon" >
+              <iconset resource="resources/resources.qrc" >:/edit_add.png</iconset>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="2" column="0" >
+         <widget class="QTableView" name="tvDb" >
+          <property name="frameShape" >
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="editTriggers" >
+           <set>QAbstractItemView::AnyKeyPressed|QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed|QAbstractItemView::NoEditTriggers</set>
+          </property>
+          <property name="alternatingRowColors" >
+           <bool>true</bool>
+          </property>
+          <property name="showGrid" >
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" >
+         <widget class="QGroupBox" name="grpAddEntry" >
+          <property name="minimumSize" >
+           <size>
+            <width>16</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="title" >
+           <string>Add a new entry:</string>
+          </property>
+          <layout class="QGridLayout" >
+           <property name="margin" >
+            <number>9</number>
+           </property>
+           <property name="spacing" >
+            <number>6</number>
+           </property>
+           <item row="0" column="1" >
+            <widget class="QLineEdit" name="leWord" >
+             <property name="minimumSize" >
+              <size>
+               <width>0</width>
+               <height>20</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0" >
+            <widget class="QLabel" name="lblWord" >
+             <property name="minimumSize" >
+              <size>
+               <width>0</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="text" >
+              <string>Portuguese:</string>
+             </property>
+             <property name="buddy" >
+              <cstring>leWord</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="4" >
+            <widget class="QToolButton" name="toolInsert" >
+             <property name="minimumSize" >
+              <size>
+               <width>0</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="text" >
+              <string>...</string>
+             </property>
+             <property name="icon" >
+              <iconset resource="resources/resources.qrc" >:/edit_add.png</iconset>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3" >
+            <widget class="QLineEdit" name="leTranslation" >
+             <property name="minimumSize" >
+              <size>
+               <width>0</width>
+               <height>20</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2" >
+            <widget class="QLabel" name="lblTranslation" >
+             <property name="minimumSize" >
+              <size>
+               <width>0</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="text" >
+              <string>English:</string>
+             </property>
+             <property name="buddy" >
+              <cstring>leTranslation</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="5" >
+            <widget class="QToolButton" name="toolCancelAdd" >
+             <property name="minimumSize" >
+              <size>
+               <width>0</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="text" >
+              <string>...</string>
+             </property>
+             <property name="icon" >
+              <iconset resource="resources/resources.qrc" >:/button_cancel.png</iconset>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabQuiz" >
+       <attribute name="title" >
+        <string>Quiz</string>
+       </attribute>
+       <layout class="QGridLayout" >
+        <property name="margin" >
+         <number>9</number>
+        </property>
+        <property name="spacing" >
+         <number>6</number>
+        </property>
+        <item row="0" column="0" colspan="3" >
+         <widget class="QFrame" name="frameQuestion" >
+          <property name="frameShape" >
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="frameShadow" >
+           <enum>QFrame::Plain</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item row="1" column="0" >
+     <widget class="QGroupBox" name="grpMessage" >
+      <property name="title" >
+       <string>Message</string>
+      </property>
+      <layout class="QGridLayout" >
+       <property name="margin" >
+        <number>9</number>
+       </property>
+       <property name="spacing" >
+        <number>6</number>
+       </property>
+       <item row="0" column="0" >
+        <widget class="QTextBrowser" name="tbNotice" >
+         <property name="maximumSize" >
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>688</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuEdit" >
+    <property name="title" >
+     <string>Edit</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuFile" >
+    <property name="title" >
+     <string>File</string>
+    </property>
+    <addaction name="actionPrint" />
+    <addaction name="actionQuit" />
+   </widget>
+   <widget class="QMenu" name="menuHelp" >
+    <property name="title" >
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout" />
+   </widget>
+   <widget class="QMenu" name="menuQuizz" >
+    <property name="title" >
+     <string>Quiz</string>
+    </property>
+    <addaction name="actionStartQuiz" />
+    <addaction name="actionStopQuiz" />
+    <addaction name="actionResetQuizScore" />
+   </widget>
+   <widget class="QMenu" name="menuEdit_2" >
+    <property name="title" >
+     <string>Edit</string>
+    </property>
+    <addaction name="actionNew" />
+    <addaction name="actionRemove" />
+   </widget>
+   <addaction name="menuFile" />
+   <addaction name="menuEdit_2" />
+   <addaction name="menuQuizz" />
+   <addaction name="menuHelp" />
+  </widget>
+  <widget class="QStatusBar" name="statusbar" />
+  <action name="actionQuit" >
+   <property name="text" >
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionPrint" >
+   <property name="text" >
+    <string>&amp;Print</string>
+   </property>
+   <property name="shortcut" >
+    <string/>
+   </property>
+  </action>
+  <action name="actionStartQuiz" >
+   <property name="text" >
+    <string>Start</string>
+   </property>
+  </action>
+  <action name="actionStopQuiz" >
+   <property name="text" >
+    <string>Stop</string>
+   </property>
+  </action>
+  <action name="actionResetQuizScore" >
+   <property name="text" >
+    <string>Reset Score</string>
+   </property>
+  </action>
+  <action name="actionNew" >
+   <property name="text" >
+    <string>&amp;New</string>
+   </property>
+   <property name="iconText" >
+    <string>New</string>
+   </property>
+   <property name="toolTip" >
+    <string>Add a new word and translation</string>
+   </property>
+   <property name="shortcut" >
+    <string/>
+   </property>
+  </action>
+  <action name="actionRemove" >
+   <property name="text" >
+    <string>&amp;Remove</string>
+   </property>
+   <property name="iconText" >
+    <string>Remove</string>
+   </property>
+   <property name="shortcut" >
+    <string/>
+   </property>
+  </action>
+  <action name="actionAbout" >
+   <property name="text" >
+    <string>About</string>
+   </property>
+  </action>
+ </widget>
+ <pixmapfunction></pixmapfunction>
+ <tabstops>
+  <tabstop>leFilter</tabstop>
+  <tabstop>pbnFilter</tabstop>
+  <tabstop>cboSortOrder</tabstop>
+  <tabstop>leWord</tabstop>
+  <tabstop>leTranslation</tabstop>
+  <tabstop>toolInsert</tabstop>
+  <tabstop>tvDb</tabstop>
+  <tabstop>tbNotice</tabstop>
+  <tabstop>tabQuiz</tabstop>
+ </tabstops>
+ <resources>
+  <include location="resources/resources.qrc" />
+ </resources>
+ <connections>
+  <connection>
+   <sender>leFilter</sender>
+   <signal>returnPressed()</signal>
+   <receiver>pbnFilter</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>187</x>
+     <y>112</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>471</x>
+     <y>112</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>leTranslation</sender>
+   <signal>returnPressed()</signal>
+   <receiver>toolInsert</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>485</x>
+     <y>179</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>632</x>
+     <y>174</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>leWord</sender>
+   <signal>returnPressed()</signal>
+   <receiver>leTranslation</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>278</x>
+     <y>179</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>405</x>
+     <y>173</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

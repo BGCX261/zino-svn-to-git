@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/" >
+        <file>button_cancel.png</file>
+        <file>edit_add.png</file>
+        <file>edit_remove.png</file>
+        <file>zino_logo.png</file>
+        <file>zino_logo_mask.png</file>
+        <file>zinomaster.db</file>
+        <file>LICENSE.txt</file>
+    </qresource>
+</RCC>

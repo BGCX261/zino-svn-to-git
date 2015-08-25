@@ -1,0 +1,672 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		069D05B0128AE5DC7EE31738 /* QtCore.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 7BC2E65A5E699A5E5D834CA2 /* QtCore.framework */; };
+		090D725E5E04574A7E9435ED /* aboutzino.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = F39B79C2ABBD8E6D0F916BC1 /* aboutzino.cpp */; settings = {ATTRIBUTES = (); }; };
+		2B093CA6F071B023A473CED0 /* main.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 118FCBAABA162BA17933C789 /* main.cpp */; settings = {ATTRIBUTES = (); }; };
+		501667F26B3C1FF6767A7C12 /* QtGui.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 9B36DA7E32F0304E780E7972 /* QtGui.framework */; };
+		51D4DBF7CB8537BE86EBD055 /* AppKit.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 821416211D63F190AAAD016A /* AppKit.framework */; };
+		6D3A9E66C158CEB84C7251A3 /* questionwidget.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 391F3EF917AEC4551F742274 /* questionwidget.cpp */; settings = {ATTRIBUTES = (); }; };
+		6E8875968CC6CE1A38624BC6 /* moc_zino.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = C2F99AC8E6A06B455E5D2D78 /* moc_zino.cpp */; settings = {ATTRIBUTES = (); }; };
+		8CEDC0C80422065537C64187 /* moc_questionwidget.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = D5C8F64E2432A835E0B91838 /* moc_questionwidget.cpp */; settings = {ATTRIBUTES = (); }; };
+		B4A4A35813D18AAFF69E2A1C /* moc_aboutzino.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = DA6AEA100140CA5B768186F8 /* moc_aboutzino.cpp */; settings = {ATTRIBUTES = (); }; };
+		B71C52D1AA72F728F1852E9D /* firstrun.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = DDA923757BA3DA20271C02F9 /* firstrun.cpp */; settings = {ATTRIBUTES = (); }; };
+		C06FDD3341D2CD6460BDEEE7 /* moc_firstrun.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 0BA987430C388F640B0F39B5 /* moc_firstrun.cpp */; settings = {ATTRIBUTES = (); }; };
+		C78BFE0DD4D0FC1F4B157F30 /* QtSql.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = E0814A49DDD73EF0F620E7DB /* QtSql.framework */; };
+		C8FD4A1AAA37CF2CA2824CCF /* Carbon.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = DA138F75C9F545CDAE7FB264 /* Carbon.framework */; };
+		C970DEE26C28766E9311E00E /* QuickTime.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = A93DF979D20C91D1A15D9625 /* QuickTime.framework */; };
+		D30519ED8AFB456A48284290 /* zino.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 187DEE5CDB81EF769C535BF3 /* zino.cpp */; settings = {ATTRIBUTES = (); }; };
+		E6FE771C31BD888969BD1E79 /* qrc_resources.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 43657A1495917FFB693BCFFE /* qrc_resources.cpp */; settings = {ATTRIBUTES = (); }; };
+		F5343EC50B34F28100086719 /* zino.app in Project Copy */ = {isa = PBXBuildFile; fileRef = F5343EC20B34F28100086719 /* zino.app */; };
+		F9E76E570E10AF14870553A7 /* ApplicationServices.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 27AE7A480FD6C52FCA80FECD /* ApplicationServices.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		26DE8D2AEA4B3714B41E931F /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+			};
+			name = Release;
+		};
+		2C641C3335766025DD51B7BD /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+			};
+			name = Debug;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F6069D5A5DA8AA28EDB8B3C6 /* Project Copy */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /Users/timsutton/dev/cpp/zino/src;
+			dstSubfolderSpec = 0;
+			files = (
+				F5343EC50B34F28100086719 /* zino.app in Project Copy */,
+			);
+			name = "Project Copy";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0572C11475F3AAF082438FFD /* aboutzino.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aboutzino.h; sourceTree = "<group>"; };
+		099A239F43026A6BC4735591 /* aboutzinobase.ui */ = {isa = PBXFileReference; lastKnownFileType = text; path = aboutzinobase.ui; sourceTree = "<group>"; };
+		0BA987430C388F640B0F39B5 /* moc_firstrun.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_firstrun.cpp; sourceTree = "<group>"; };
+		118FCBAABA162BA17933C789 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		14F61F65E236DC1B3F70A4BE /* ui_firstrunbase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ui_firstrunbase.h; sourceTree = "<group>"; };
+		187DEE5CDB81EF769C535BF3 /* zino.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = zino.cpp; sourceTree = "<group>"; };
+		27AE7A480FD6C52FCA80FECD /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
+		391F3EF917AEC4551F742274 /* questionwidget.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = questionwidget.cpp; sourceTree = "<group>"; };
+		43657A1495917FFB693BCFFE /* qrc_resources.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = qrc_resources.cpp; sourceTree = "<group>"; };
+		46CDF142E77848C1369025B9 /* questionwidget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = questionwidget.h; sourceTree = "<group>"; };
+		680A726690157CF9887E457C /* ui_questionwidgetbase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ui_questionwidgetbase.h; sourceTree = "<group>"; };
+		7190656A8C4126E5484D8532 /* src.pro */ = {isa = PBXFileReference; lastKnownFileType = text; path = src.pro; sourceTree = "<group>"; };
+		719BEE6F9DD4231E39BA2970 /* questionwidgetbase.ui */ = {isa = PBXFileReference; lastKnownFileType = text; path = questionwidgetbase.ui; sourceTree = "<group>"; };
+		7BC2E65A5E699A5E5D834CA2 /* QtCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = /Library/Frameworks/QtCore.framework; sourceTree = "<absolute>"; };
+		821416211D63F190AAAD016A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		891E846C8335C4AA658E1E5C /* ui_aboutzinobase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ui_aboutzinobase.h; sourceTree = "<group>"; };
+		9B36DA7E32F0304E780E7972 /* QtGui.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtGui.framework; path = /Library/Frameworks/QtGui.framework; sourceTree = "<absolute>"; };
+		A2C91D7363F67E4996F6C157 /* zinobase.ui */ = {isa = PBXFileReference; lastKnownFileType = text; path = zinobase.ui; sourceTree = "<group>"; };
+		A93DF979D20C91D1A15D9625 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
+		B7D403DC8AE408E0054DA973 /* ui_zinobase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ui_zinobase.h; sourceTree = "<group>"; };
+		B8E3974D6CFDA90D1C7AEE55 /* firstrunbase.ui */ = {isa = PBXFileReference; lastKnownFileType = text; path = firstrunbase.ui; sourceTree = "<group>"; };
+		C2F99AC8E6A06B455E5D2D78 /* moc_zino.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_zino.cpp; sourceTree = "<group>"; };
+		C6B1BE1DF762F815A36F20B6 /* zino.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zino.h; sourceTree = "<group>"; };
+		CE851BA45ED0F505B34CC953 /* firstrun.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = firstrun.h; sourceTree = "<group>"; };
+		D5C8F64E2432A835E0B91838 /* moc_questionwidget.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_questionwidget.cpp; sourceTree = "<group>"; };
+		DA138F75C9F545CDAE7FB264 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		DA6AEA100140CA5B768186F8 /* moc_aboutzino.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_aboutzino.cpp; sourceTree = "<group>"; };
+		DDA923757BA3DA20271C02F9 /* firstrun.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = firstrun.cpp; sourceTree = "<group>"; };
+		E0814A49DDD73EF0F620E7DB /* QtSql.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtSql.framework; path = /Library/Frameworks/QtSql.framework; sourceTree = "<absolute>"; };
+		EDC4BB38C7BE8388C744AF51 /* resources.qrc */ = {isa = PBXFileReference; lastKnownFileType = text; name = resources.qrc; path = resources/resources.qrc; sourceTree = "<group>"; };
+		F39B79C2ABBD8E6D0F916BC1 /* aboutzino.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = aboutzino.cpp; sourceTree = "<group>"; };
+		F5343EC20B34F28100086719 /* zino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zino.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A1043669E6E5A7426EA502A /* Frameworks & Libraries */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C78BFE0DD4D0FC1F4B157F30 /* QtSql.framework in Frameworks & Libraries */,
+				501667F26B3C1FF6767A7C12 /* QtGui.framework in Frameworks & Libraries */,
+				C8FD4A1AAA37CF2CA2824CCF /* Carbon.framework in Frameworks & Libraries */,
+				C970DEE26C28766E9311E00E /* QuickTime.framework in Frameworks & Libraries */,
+				51D4DBF7CB8537BE86EBD055 /* AppKit.framework in Frameworks & Libraries */,
+				069D05B0128AE5DC7EE31738 /* QtCore.framework in Frameworks & Libraries */,
+				F9E76E570E10AF14870553A7 /* ApplicationServices.framework in Frameworks & Libraries */,
+			);
+			name = "Frameworks & Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05596AB53D8D521C69802C27 /* zino */ = {
+			isa = PBXGroup;
+			children = (
+				FB61758D0F0FDA4BA867C3D5 /* Sources */,
+				46E892BBB6BB6952967E0561 /* Temporary Sources */,
+				883D7615C4D2DE3FA1218F12 /* Headers */,
+				7CABE3C80E79AD2B307756D2 /* Sources [qmake] */,
+				52C235EBF1C9B07808119459 /* Sources [RCC] */,
+				EEC299C65D5017EB9DD513B0 /* Sources [UIC] */,
+				ED1E82605DD74B483AF3C982 /* External Frameworks and Libraries */,
+				F5343EC30B34F28100086719 /* Products */,
+			);
+			name = zino;
+			sourceTree = "<group>";
+		};
+		16A82DA2701971900CCC9274 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				EDC4BB38C7BE8388C744AF51 /* resources.qrc */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		46E892BBB6BB6952967E0561 /* Temporary Sources */ = {
+			isa = PBXGroup;
+			children = (
+				DA6AEA100140CA5B768186F8 /* moc_aboutzino.cpp */,
+				0BA987430C388F640B0F39B5 /* moc_firstrun.cpp */,
+				D5C8F64E2432A835E0B91838 /* moc_questionwidget.cpp */,
+				C2F99AC8E6A06B455E5D2D78 /* moc_zino.cpp */,
+				43657A1495917FFB693BCFFE /* qrc_resources.cpp */,
+				891E846C8335C4AA658E1E5C /* ui_aboutzinobase.h */,
+				14F61F65E236DC1B3F70A4BE /* ui_firstrunbase.h */,
+				680A726690157CF9887E457C /* ui_questionwidgetbase.h */,
+				B7D403DC8AE408E0054DA973 /* ui_zinobase.h */,
+			);
+			name = "Temporary Sources";
+			sourceTree = "<group>";
+		};
+		52C235EBF1C9B07808119459 /* Sources [RCC] */ = {
+			isa = PBXGroup;
+			children = (
+				16A82DA2701971900CCC9274 /* resources */,
+			);
+			name = "Sources [RCC]";
+			sourceTree = "<group>";
+		};
+		7CABE3C80E79AD2B307756D2 /* Sources [qmake] */ = {
+			isa = PBXGroup;
+			children = (
+				7190656A8C4126E5484D8532 /* src.pro */,
+			);
+			name = "Sources [qmake]";
+			sourceTree = "<group>";
+		};
+		883D7615C4D2DE3FA1218F12 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				0572C11475F3AAF082438FFD /* aboutzino.h */,
+				CE851BA45ED0F505B34CC953 /* firstrun.h */,
+				46CDF142E77848C1369025B9 /* questionwidget.h */,
+				C6B1BE1DF762F815A36F20B6 /* zino.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		ED1E82605DD74B483AF3C982 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				E0814A49DDD73EF0F620E7DB /* QtSql.framework */,
+				9B36DA7E32F0304E780E7972 /* QtGui.framework */,
+				DA138F75C9F545CDAE7FB264 /* Carbon.framework */,
+				A93DF979D20C91D1A15D9625 /* QuickTime.framework */,
+				821416211D63F190AAAD016A /* AppKit.framework */,
+				7BC2E65A5E699A5E5D834CA2 /* QtCore.framework */,
+				27AE7A480FD6C52FCA80FECD /* ApplicationServices.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		EEC299C65D5017EB9DD513B0 /* Sources [UIC] */ = {
+			isa = PBXGroup;
+			children = (
+				099A239F43026A6BC4735591 /* aboutzinobase.ui */,
+				B8E3974D6CFDA90D1C7AEE55 /* firstrunbase.ui */,
+				719BEE6F9DD4231E39BA2970 /* questionwidgetbase.ui */,
+				A2C91D7363F67E4996F6C157 /* zinobase.ui */,
+			);
+			name = "Sources [UIC]";
+			sourceTree = "<group>";
+		};
+		F5343EC30B34F28100086719 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5343EC20B34F28100086719 /* zino.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB61758D0F0FDA4BA867C3D5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F39B79C2ABBD8E6D0F916BC1 /* aboutzino.cpp */,
+				DDA923757BA3DA20271C02F9 /* firstrun.cpp */,
+				118FCBAABA162BA17933C789 /* main.cpp */,
+				391F3EF917AEC4551F742274 /* questionwidget.cpp */,
+				187DEE5CDB81EF769C535BF3 /* zino.cpp */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1E93D0F4181432D0AF506542 /* zino */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5343ED00B34F28C00086719 /* Build configuration list for PBXNativeTarget "zino" */;
+			buildPhases = (
+				D7BA7D76DAB5DD13389D6332 /* Qt Qmake */,
+				A0A52A2ADF7A1E2A99738674 /* Qt Preprocessors */,
+				F6069D5A5DA8AA28EDB8B3C6 /* Project Copy */,
+				C29B8785722055ED95EF7B57 /* Build Sources */,
+				2A1043669E6E5A7426EA502A /* Frameworks & Libraries */,
+				3787F99312C85FF0073FD7BA /* Bundle Resources */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				BUILD_ROOT = /Users/timsutton/dev/cpp/zino/src;
+				CC = "";
+				CPLUSPLUS = "";
+				DYLIB_COMPATIBILITY_VERSION = 1.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/QtCore.framework/Versions/4/Headers,
+					/usr/include/QtCore,
+					/Library/Frameworks/QtGui.framework/Versions/4/Headers,
+					/usr/include/QtGui,
+					/Library/Frameworks/QtSql.framework/Versions/4/Headers,
+					/usr/include/QtSql,
+					/usr/include,
+					.,
+					.,
+					.,
+					/usr/local/include,
+					/System/Library/Frameworks/CarbonCore.framework/Headers,
+					"/usr/local/Qt4.2/mkspecs/macx-xcode",
+				);
+				INFOPLIST_FILE = Info.plist;
+				LEXFLAGS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OPTIMIZATION_CFLAGS = "";
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-F/Library/Frameworks",
+					"-DQT_SQL_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-F/Library/Frameworks",
+					"-DQT_SQL_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_LDFLAGS = (
+					"-headerpad_max_install_names",
+					"-F/Library/Frameworks",
+					"-L/Library/Frameworks",
+					"-lz",
+					"-lm",
+					"-liconv",
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = zino;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "";
+				YACCFLAGS = "-d";
+			};
+			dependencies = (
+			);
+			name = zino;
+			productName = zino;
+			productReference = F5343EC20B34F28100086719 /* zino.app */;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleExecutable</key>
+	<string>zino</string>
+	<key>CFBundleGetInfoString</key>
+	<string>Created by Qt/QMake</string>
+	<key>CFBundleIconFile</key>
+	<string></string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>NOTE</key>
+	<string>Please, do NOT change this file -- It was generated by Qt/QMake.</string>
+</dict>
+</plist>
+";
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91B15E841AA80083484172DE /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 2A951308CDB28F104D0A4BD2 /* Build configuration list for PBXProject "zino" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				2C641C3335766025DD51B7BD /* Debug */,
+				26DE8D2AEA4B3714B41E931F /* Release */,
+			);
+			hasScannedForEncodings = 1;
+			mainGroup = 05596AB53D8D521C69802C27 /* zino */;
+			productRefGroup = F5343EC30B34F28100086719 /* Products */;
+			projectDirPath = "";
+			targets = (
+				1E93D0F4181432D0AF506542 /* zino */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3787F99312C85FF0073FD7BA /* Bundle Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "Bundle Resources";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A0A52A2ADF7A1E2A99738674 /* Qt Preprocessors */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "Qt Preprocessors";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C \"/Users/timsutton/dev/cpp/zino/src\" -f \"zino.xcodeproj/qt_preprocess.mak\"";
+		};
+		D7BA7D76DAB5DD13389D6332 /* Qt Qmake */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "Qt Qmake";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C \"/Users/timsutton/dev/cpp/zino/src\" -f \"zino.xcodeproj/qt_makeqmake.mak\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C29B8785722055ED95EF7B57 /* Build Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				090D725E5E04574A7E9435ED /* aboutzino.cpp in Build Sources */,
+				B71C52D1AA72F728F1852E9D /* firstrun.cpp in Build Sources */,
+				2B093CA6F071B023A473CED0 /* main.cpp in Build Sources */,
+				6D3A9E66C158CEB84C7251A3 /* questionwidget.cpp in Build Sources */,
+				D30519ED8AFB456A48284290 /* zino.cpp in Build Sources */,
+				B4A4A35813D18AAFF69E2A1C /* moc_aboutzino.cpp in Build Sources */,
+				C06FDD3341D2CD6460BDEEE7 /* moc_firstrun.cpp in Build Sources */,
+				8CEDC0C80422065537C64187 /* moc_questionwidget.cpp in Build Sources */,
+				6E8875968CC6CE1A38624BC6 /* moc_zino.cpp in Build Sources */,
+				E6FE771C31BD888969BD1E79 /* qrc_resources.cpp in Build Sources */,
+			);
+			name = "Build Sources";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8DB1DD96F65B1BF1FFC506E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+			};
+			name = Debug;
+		};
+		95E1EB2E5DDD587BE5B3E548 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+			};
+			name = Release;
+		};
+		F5343ED10B34F28C00086719 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					i386,
+					ppc,
+				);
+				BUILD_ROOT = /Users/timsutton/dev/cpp/zino/src;
+				BUILD_VARIANTS = normal;
+				CC = "";
+				COPY_PHASE_STRIP = NO;
+				CPLUSPLUS = "";
+				DYLIB_COMPATIBILITY_VERSION = 1.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/QtCore.framework/Versions/4/Headers,
+					/usr/include/QtCore,
+					/Library/Frameworks/QtGui.framework/Versions/4/Headers,
+					/usr/include/QtGui,
+					/Library/Frameworks/QtSql.framework/Versions/4/Headers,
+					/usr/include/QtSql,
+					/usr/include,
+					.,
+					.,
+					.,
+					/usr/local/include,
+					/System/Library/Frameworks/CarbonCore.framework/Headers,
+					"/usr/local/Qt4.2/mkspecs/macx-xcode",
+				);
+				INFOPLIST_FILE = Info.plist;
+				LEXFLAGS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-F/Library/Frameworks",
+					"-DQT_SQL_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-F/Library/Frameworks",
+					"-DQT_SQL_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_LDFLAGS = (
+					"-headerpad_max_install_names",
+					"-F/Library/Frameworks",
+					"-L/Library/Frameworks",
+					"-lz",
+					"-lm",
+					"-liconv",
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = zino;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "";
+				YACCFLAGS = "-d";
+			};
+			name = Debug;
+		};
+		F5343ED20B34F28C00086719 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					i386,
+					ppc,
+				);
+				BUILD_ROOT = /Users/timsutton/dev/cpp/zino/src;
+				BUILD_VARIANTS = normal;
+				CC = "";
+				COPY_PHASE_STRIP = YES;
+				CPLUSPLUS = "";
+				DYLIB_COMPATIBILITY_VERSION = 1.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/QtCore.framework/Versions/4/Headers,
+					/usr/include/QtCore,
+					/Library/Frameworks/QtGui.framework/Versions/4/Headers,
+					/usr/include/QtGui,
+					/Library/Frameworks/QtSql.framework/Versions/4/Headers,
+					/usr/include/QtSql,
+					/usr/include,
+					.,
+					.,
+					.,
+					/usr/local/include,
+					/System/Library/Frameworks/CarbonCore.framework/Headers,
+					"/usr/local/Qt4.2/mkspecs/macx-xcode",
+				);
+				INFOPLIST_FILE = Info.plist;
+				LEXFLAGS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-F/Library/Frameworks",
+					"-DQT_SQL_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-F/Library/Frameworks",
+					"-DQT_SQL_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_LDFLAGS = (
+					"-headerpad_max_install_names",
+					"-F/Library/Frameworks",
+					"-L/Library/Frameworks",
+					"-lz",
+					"-lm",
+					"-liconv",
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = zino;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "";
+				YACCFLAGS = "-d";
+			};
+			name = Release;
+		};
+		F5343ED30B34F28C00086719 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					i386,
+					ppc,
+				);
+				BUILD_ROOT = /Users/timsutton/dev/cpp/zino/src;
+				BUILD_VARIANTS = normal;
+				CC = "";
+				CPLUSPLUS = "";
+				DYLIB_COMPATIBILITY_VERSION = 1.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/QtCore.framework/Versions/4/Headers,
+					/usr/include/QtCore,
+					/Library/Frameworks/QtGui.framework/Versions/4/Headers,
+					/usr/include/QtGui,
+					/Library/Frameworks/QtSql.framework/Versions/4/Headers,
+					/usr/include/QtSql,
+					/usr/include,
+					.,
+					.,
+					.,
+					/usr/local/include,
+					/System/Library/Frameworks/CarbonCore.framework/Headers,
+					"/usr/local/Qt4.2/mkspecs/macx-xcode",
+				);
+				INFOPLIST_FILE = Info.plist;
+				LEXFLAGS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-F/Library/Frameworks",
+					"-DQT_SQL_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-F/Library/Frameworks",
+					"-DQT_SQL_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_LDFLAGS = (
+					"-headerpad_max_install_names",
+					"-F/Library/Frameworks",
+					"-L/Library/Frameworks",
+					"-lz",
+					"-lm",
+					"-liconv",
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = zino;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "";
+				YACCFLAGS = "-d";
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A951308CDB28F104D0A4BD2 /* Build configuration list for PBXProject "zino" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DB1DD96F65B1BF1FFC506E0 /* Debug */,
+				95E1EB2E5DDD587BE5B3E548 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5343ED00B34F28C00086719 /* Build configuration list for PBXNativeTarget "zino" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5343ED10B34F28C00086719 /* Debug */,
+				F5343ED20B34F28C00086719 /* Release */,
+				F5343ED30B34F28C00086719 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 91B15E841AA80083484172DE /* Project object */;
+}

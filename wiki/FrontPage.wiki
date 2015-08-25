@@ -1,0 +1,7 @@
+#summary Welcome to the Zino home page
+
+===The Zino Project===
+
+When you learn a new language its handy to keep a list of the new words you learn. Zino is a little application to allow you to do just that!
+
+
